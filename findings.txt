@@ -1,0 +1,2 @@
+I learned about how port exposing actually works and how they are used to communicate internally.
+And I also learned how you can get ip, storage information, processes and their meta data.

@@ -1,0 +1,12 @@
+Containers:
+CONTAINER ID   IMAGE                  COMMAND                  CREATED         STATUS         PORTS                              NAMES
+ff2f022200da   devops-service1        "docker-entrypoint.s…"   4 minutes ago   Up 4 minutes   0.0.0.0:8199->8199/tcp             devops-service1-1
+95c37fbed246   devops-service2        "python main.py"         4 minutes ago   Up 4 minutes   3000/tcp, 0.0.0.0:8080->8199/tcp   devops-service2-1
+1b77faa43577   postgres:15.3-alpine   "docker-entrypoint.s…"   9 days ago      Up 13 hours    127.0.0.1:5433->5432/tcp           booking-portal-db-1
+Networks:
+NETWORK ID     NAME                        DRIVER    SCOPE
+94602fb71346   booking-portal_bp-network   bridge    local
+180c5f8d90ff   bridge                      bridge    local
+25ff3079fb18   devops_default              bridge    local
+991109e070fc   host                        host      local
+5c231f7aa4d2   none                        null      local
